@@ -13,13 +13,16 @@ body{
     justify-content: center;
 }
 
-section{
+/* section{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
 
-}
+} */
 .section__header{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
     height: 100vh;
 }
 .heading{
@@ -68,6 +71,9 @@ section{
     width: 50%;
     margin: 2rem;
     padding-top: 7rem;
+    background: #e12121;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 10rem 10rem 0 0;
 }
 
 .header__image img{
@@ -86,5 +92,80 @@ section{
 .about__intro h1{
     padding: 1rem;
 }
+.about__flex{
+    display: flex;
+}
+.about__image{
+    width: 60%;
+    margin: 2rem;
+    background-color: red;
+    /* border: 1px solid red; */
+    border-radius: 2.5rem;
+    /* overflow: hidden; */
+
+}
+.about__image img{
+    width: 100%;
+    height: 100%;
+    border: 0px solid transparent;
+    border-radius: 2.5rem;
+    transition: all 0.5s ease-in-out;
+    transform: rotate(20deg)
+}
 
 
+.about__image img:hover{
+    transform: rotate(0deg)
+}
+.about__cards{
+    display: flex;
+    /* gap: 2rem; */
+    justify-content: space-evenly;
+}
+.about__card{
+    padding: 3.5rem 2.5rem;
+    border: 0px;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+}
+
+.skill__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.section__skills{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+.skills__portion{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    /* gap: 3rem; */
+}
+.skills__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    margin: 1rem;
+    gap: 1.5rem 3rem;
+    border: 0px;
+    border-radius: 2.5rem;
+    background-color:#e12121;
+    color: white;
+}
+.skills__box article{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.fa{
+    color: #e12121;
+}
